@@ -1,0 +1,203 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --clr-blue: #4280ef;
+  --clr-yellow: #f78720;
+  --clr-grey: #2c2c2c;
+  --clr-darkBlue: #1441a5;
+  --clr-lightBlue: #8db3f5;
+  --clr-lightGrey: #f2f2f2;
+  --clr-borderGrey: #eaeaea;
+  /* Text-colors*/
+  --clr-darkTextColor: #000000;
+  --clr-midTextColor: #565659;
+  --clr-lightTextColor: #9e9ea6;
+  font-size: 12px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+body {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  background-color: var(--clr-blue);
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 4rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: var(--clr-lightBlue);
+}
+.btn:disabled {
+  background-color: var(--clr-lightBlue);
+  opacity: 0.3;
+}
+.btn_outer {
+  color: var(--clr-blue);
+  border-radius: 10px;
+  width: 100%;
+  height: 4rem;
+  font-size: 1.5rem;
+  border: 1px solid var(--clr-blue);
+}
+.btn_outer:hover {
+  color: var(--clr-blue);
+  border: 3px solid var(--clr-blue);
+}
+.btn_outer:disabled {
+  opacity: 0.3;
+}
+.welcome_container {
+  width: 85vw;
+  max-width: 30rem;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--clr-blue);
+  font-size: 4rem;
+}
+p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.content {
+  width: 100%;
+}
+.content p {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.content p span {
+  color: var(--clr-blue);
+}
+.back_container {
+  margin-bottom: -2rem;
+}
+.back_container span {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+.input_container {
+  display: flex;
+  flex-direction: column;
+}
+.input_container label {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.input_container input {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  border: 1px solid var(--clr-borderGrey);
+  background-color: var(--clr-lightGrey);
+  outline: none;
+}
+.input_container input::placeholder {
+  font-style: italic;
+}
+.login_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.forgot {
+  color: #f78720;
+  text-align: end;
+  font-size: 1.3rem;
+}
+.google {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+/* verify passcode */
+.passcode_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+h2 {
+  font-size: 1.6rem;
+}
+.inner_container {
+  padding: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.passcode_input {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+.passcode_input input {
+  width: 4rem;
+  height: 5rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.passcode_button {
+  display: flex;
+  gap: 2rem;
+}
